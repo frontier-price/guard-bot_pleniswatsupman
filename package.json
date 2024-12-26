@@ -1,0 +1,65 @@
+{
+  "name": "the_guard_bot",
+  "version": "1.6.0",
+  "description": "Telegram guard bot to manage a network of groups.",
+  "main": "index.js",
+  "scripts": {
+    "postversion": "git push --atomic --follow-tags origin develop develop:master",
+    "start": "node index",
+    "lint": "eslint --ext .ts --ext .js .",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDevs-Network/bot.git"
+  },
+  "keywords": [
+    "bot",
+    "the guard",
+    "thedevs",
+    "telegram"
+  ],
+  "author": "Thomas Rory Gummerson <thomas@gummerson.no> (https://trgwii.no)",
+  "contributors": [
+    "Pouria Ezzati <pouria@thedevs.network> (https://thedevs.network)",
+    "Wojciech Pawlik <woj.pawlik@gmail.com>",
+    "Muthu Kumar <mkr@feathers.studio> (https://mkr.pw)",
+    "Simon Schürrle (https://sitischu.com)",
+    "Martin Rys (https://rys.pw)"
+  ],
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TheDevs-Network/the-guard-bot/issues"
+  },
+  "homepage": "https://github.com/TheDevs-Network/the-guard-bot/",
+  "dependencies": {
+    "dedent-js": "^1.0.1",
+    "jspack": "0.0.4",
+    "millisecond": "^0.1.2",
+    "nedb-promise": "^2.0.1",
+    "ramda": "^0.29.1",
+    "require-directory": "^2.1.1",
+    "spamwatch": "^0.4.0",
+    "string-replace-async": "^2.0.0",
+    "telegraf": "^4.15.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.2",
+    "undici": "^5.28.0",
+    "xregexp": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=18.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.52",
+    "@types/node-fetch": "^2.6.9",
+    "@types/ramda": "^0.25.51",
+    "@types/xregexp": "^4.4.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0"
+  }
+}
